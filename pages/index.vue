@@ -1,9 +1,10 @@
 <template>
   <!-- big container -->
-  <div>
+  <div style="height: 100vh;">
     <!-- outlining page as 1 big row -->
     <b-row
       class="text-center"
+      style="height: 100%"
     >
       <!-- left sign up section -->
       <b-col md="6">
@@ -13,24 +14,12 @@
       <b-col
         md="6"
       >
-        <div class="pattern">
-          <!-- inner-row -->
-          <b-row
-            align-h="center"
-            align-v="center"
-            style="height: 100vh;"
-          >
-            <!-- inner-col -->
-            <b-col
-              sm="12"
-              md="12"
-            >
-              <div>
-                <img src="@/assets/img/pattern.png" alt="pattern" class="img-fluid">
-              </div>
-            </b-col><!-- ./inner-col -->
-          </b-row><!-- ./inner-row -->
-        </div><!-- ./right banner -->
+        <!-- inner-row -->
+        <b-row align-v="center" style="height: 100%" class="pattern">
+          <b-col>
+            <img src="@/assets/img/pattern.png" alt="pattern" class="img-fluid">
+          </b-col><!-- ./inner-col -->
+        </b-row><!-- ./inner-row -->
       </b-col>
     </b-row>
   </div><!-- ./big container -->
@@ -75,6 +64,7 @@ Input {
   border-radius: 20px !important;
   background: #E9F1F5 !important;
   height: 40px !important;
+  color: blue;
 }
 
 .input-group-error-prepend .input-group-error-append {
